@@ -11,6 +11,7 @@ const Addmovieform = ({addmovie}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addmovie({
+            id: Date.now,
             titre, description, posterURL, note
         })
         
